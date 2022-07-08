@@ -26,7 +26,6 @@ MongoDB will create the database if it does not exist, and make a connection to 
 *******************************************************************************************************
 Important: In MongoDB, a database is not created until it gets content!
 
-Remember: In MongoDB, a database is not created until it gets content, so if this is your first time creating a database, you should complete the next two chapters (create collection and create document) before you check if the database exists!
 
 Important: In MongoDB, a collection is not created until it gets content!
 
@@ -64,12 +63,16 @@ mycol = mydb["customers"]
 print(mydb.list_collection_names())
 =================================================================================================================
 Insert Into Collection
-To insert a record, or document as it is called in MongoDB, into a collection, we use the insert_one() method.
+To insert a record, or document as it is called in MongoDB, into a collection, 
+
+we use the insert_one() method.
 
 The first parameter of the insert_one() method is a dictionary containing the name(s) and value(s) of each field in the document you want to insert.
 
 ------------
-To insert multiple documents into a collection in MongoDB, we use the insert_many() method.
+To insert multiple documents into a collection in MongoDB,
+
+we use the insert_many() method.
 
 The first parameter of the insert_many() method is a list containing dictionaries with the data you want to insert:
 
@@ -77,7 +80,9 @@ The first parameter of the insert_many() method is a list containing dictionarie
 In MongoDB we use the find and findOne methods to find data in a collection.
 
 Just like the SELECT statement is used to find data in a table in a MySQL database.
-To select data from a collection in MongoDB, we can use the find_one() method.
+To select data from a collection in MongoDB,
+
+we can use the find_one() method.
 
 The find_one() method returns the first occurrence in the selection.
 
